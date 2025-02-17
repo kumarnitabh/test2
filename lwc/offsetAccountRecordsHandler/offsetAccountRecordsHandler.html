@@ -1,0 +1,9 @@
+<template>
+    <template for:each={accountDataToDisplay} for:item="account">
+        <li key={account.Id}>{account.Name}</li>
+    </template>
+    <lightning-button label="Previous" onclick={handlePrevious} disabled = {disabledPreviousButton} ></lightning-button>
+    <lightning-button label="Next" onclick={handleNext} disabled ={disabledNextButton} ></lightning-button>
+
+
+</template>
